@@ -50,7 +50,8 @@ defmodule ParallelSumGui.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-      {:styler, ">= 1.0.0-alpha.0", only: [:dev, :test], runtime: false}
+      {:styler, ">= 1.0.0-alpha.0", only: [:dev, :test], runtime: false},
+      {:parallel_sum, path: "../parallel_sum"}
     ]
   end
 
