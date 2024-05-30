@@ -20,6 +20,7 @@ defmodule ParallelSumGuiWeb.ConnCase do
   using do
     quote do
       use ParallelSumGuiWeb, :verified_routes
+
       import ParallelSumGuiWeb.ConnCase
       import Phoenix.ConnTest
       import Plug.Conn
