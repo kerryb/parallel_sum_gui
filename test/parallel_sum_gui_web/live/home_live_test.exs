@@ -24,12 +24,12 @@ defmodule ParallelSumGuiWeb.HomeLiveTest do
     end
 
     test "allows the counter and total to be reset", %{conn: conn} do
-      Counter.value()
+      Counter.next_value()
       Total.add(42)
       {:ok, view, _html} = live(conn, ~p"/")
       assert view |> element("#total", "42") |> has_element?()
       view |> element("#reset") |> render_click()
-      assert Counter.value() == 1
+      assert Counter.next_value() == 1
       assert Total.value() == 0
       assert view |> element("#total", "0") |> has_element?()
     end
