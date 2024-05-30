@@ -1,4 +1,12 @@
 <div class="mb-2">
+  <div class="inline-block">
+    <.simple_form for={@form} phx-submit="submit">
+      <div class="w-30 inline-block">
+        <.input field={@form[:tasks]} label="Number of parallel tasks" type="number" />
+      </div>
+      <.button type="submit">Run</.button>
+    </.simple_form>
+  </div>
   <.button id="reset" phx-click="reset">Reset</.button>
 </div>
 <div>
