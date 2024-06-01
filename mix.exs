@@ -51,7 +51,7 @@ defmodule ParallelSumGui.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
       {:styler, ">= 1.0.0-alpha.0", only: [:dev, :test], runtime: false},
-      {:parallel_sum, path: "../parallel_sum"}
+      {:parallel_sum, github: "kerryb/parallel_sum"}
     ]
   end
 
